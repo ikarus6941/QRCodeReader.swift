@@ -409,7 +409,7 @@ public final class QRCodeReader: NSObject, AVCaptureMetadataOutputObjectsDelegat
         }
     }
     
-    func scanQRCode(fromImage image: UIImage) {
+    public func scanQRCode(fromImage image: UIImage) {
         sessionQueue.async { [weak self] in
             guard let weakSelf = self else { return }
             
